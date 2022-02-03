@@ -1,0 +1,18 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+	"scripts": {
+		"prefix": "postcss ./static/css/style.css --use autoprefixer -d ./static/css/"
+	},
+	"browserslist": "last 2 versions",
+  "dependencies": {
+    "sass": "^1.49.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0"
+  }
+}
