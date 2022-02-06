@@ -1,0 +1,25 @@
+/**
+BASE.SCSS
+ */
+
+body {
+	background-color: #fff;
+	font-family: var(--font-roboto);
+	font-weight: 300;
+	color: #212529;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.steps .container, .restaurants .container {
+	padding: 2.5rem 1.2rem;
+}
+
+.flex-center {
+	@include flex-center;
+}

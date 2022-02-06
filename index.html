@@ -5,29 +5,133 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<title>Ohmyfood</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
 </head>
 <body>
 
-	<!-- LOADER -->
+	<!-- LOADER
 	<div class="loader">
-		<div class="loader__container">
-
+		<div class="loader__inner flex-center">
+			<div class="loader__container">
+				<div class="loader__1"></div><div class="loader__2"></div><div class="loader__3"></div><div class="loader__4"></div>
+				<div class="loader__5"></div><div class="loader__6"></div><div class="loader__7"></div><div class="loader__8"></div>
+				<div class="loader__9"></div><div class="loader__10"></div><div class="loader__11"></div><div class="loader__12"></div>
+				<div class="loader__13"></div><div class="loader__14"></div><div class="loader__15"></div><div class="loader__16"></div>
+			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- HEADER -->
-	<header role="banner">
-
+	<header class="header flex-center" role="banner">
+		<h1>
+			<a href="/" class="header__logo">
+				<img src="static/img/logo/ohmyfood@2x.svg" alt="logo" />
+			</a>
+		</h1>
 	</header>
 
 	<!-- MAIN -->
-	<main>
-
+	<main role="main">
+		<div class="maps flex-center">
+			<i class="fas fa-map-marker-alt local__icon"></i>
+			<span>Paris, Belleville</span>
+		</div>
+		<section class="intro flex-center">
+			<h2 class="intro__title">Réservez le menu qui vous convient</h2>
+			<p class="intro__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+			<a href="#" class="btn flex-center">
+				<span>Explorer nos restaurants</span>
+			</a>
+		</section>
+		<section class="steps">
+			<div class="container">
+				<h2>Fonctionnement</h2>
+				<ul class="steps__nav">
+					<li class="steps__item">
+						<span class="steps__count flex-center">1</span>
+						<i class="fa-mobile-alt fas tuto__icon"></i>
+						<span class="steps__text">Choisissez un restaurant</span>
+					</li>
+					<li class="steps__item">
+						<span class="steps__count flex-center">2</span>
+						<i class="fa-list-ul fas tuto__icon"></i>
+						<span class="steps__text">Composez votre menu</span>
+					</li>
+					<li class="steps__item">
+						<span class="steps__count flex-center">3</span>
+						<i class="fa-store fas tuto__icon"></i>
+						<span class="steps__text">Dégustez au restaurant</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="restaurants">
+			<div class="container">
+				<h2>Restaurants</h2>
+				<div class="restaurants__list">
+					<div class="cards">
+						<a href="pages/" class="cards__link">
+							<div class="cards__badge">
+								<span>Nouveau</span>
+							</div>
+							<figure>
+								<img src="static/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay-wennington" />
+								<figcaption>
+									<div class="cards__content">
+										<h3>La palette du goût</h3>
+										<p>Ménilmontant</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="pages/" class="cards__link">
+							<div class="cards__badge">
+								<span>Nouveau</span>
+							</div>
+							<figure>
+								<img src="static/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="stil" />
+								<figcaption>
+									<div class="cards__content">
+										<h3>La palette du goût</h3>
+										<p>Ménilmontant</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="pages/" class="cards__link">
+							<figure>
+								<img src="static/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa-heftiba" />
+								<figcaption>
+									<div class="cards__content">
+										<h3>La palette du goût</h3>
+										<p>Ménilmontant</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="pages/" class="cards__link">
+							<figure>
+								<img src="static/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis-hansel-shotsoflouis" />
+								<figcaption>
+									<div class="cards__content">
+										<h3>La palette du goût</h3>
+										<p>Ménilmontant</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<!-- FOOTER -->
-	<footer>
+	<footer role="contentinfo">
 
 	</footer>
 

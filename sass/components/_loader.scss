@@ -1,0 +1,51 @@
+/**
+LOADER.SCSS
+ */
+
+.loader {
+	background: linear-gradient(to right, var(--primary) 2%,#7202bb 82%);
+	position: fixed;
+	z-index: 1000;
+	animation: slidetop .8s cubic-bezier(0.32, 0, 0.67, 0) forwards 5s;
+	@include fixed-fullscreen;
+	&__inner {
+		height: 100%;
+	}
+	&__container {
+		position: relative;
+		height: 3.625rem;
+		width: 3.625rem;
+		& div {
+			background-color: #fff;
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+			border-radius: 50%;
+			position: absolute;
+			height: .75rem;
+			width: .75rem;
+			opacity: 0;
+			animation: load 4.6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+		}
+	}
+	& &__1 {top: 0;left: 0;animation-delay: 1.06s;} & &__2 {top: 0;left: 16px;animation-delay: .97s;}
+	& &__3 {top: 0;left: 31px;animation-delay: .87s;} & &__4 {top: 0;left: 47px;animation-delay: .78s;}
+	& &__5 {top: 16px;left: 0;animation-delay: .69s;} & &__6 {top: 16px;left: 16px;animation-delay: .6s;}
+	& &__7 {top: 16px;left: 31px;animation-delay: .51s;} & &__8 {top: 16px;left: 47px;animation-delay: .41s;}
+	& &__9 {top: 31px;left: 0;animation-delay: .32s;} & &__10 {top: 31px;left: 16px;animation-delay: .23s;}
+	& &__11 {top: 31px;left: 31px;animation-delay: .14s;} & &__12 {top: 31px;left: 47px;animation-delay: .05s;}
+	& &__13 {top: 47px;left: 0;animation-delay: -0.05s;} & &__14 {top: 47px;left: 16px;animation-delay: -0.14s;}
+	& &__15 {top: 47px;left: 31px;animation-delay: -0.23s;} & &__16 {top: 47px;left: 47px;animation-delay: -0.32s;}
+}
+
+@keyframes load {
+	0% {opacity: 0;transform: translateY(-97px);}
+	15% {opacity: 0;transform: translateY(-97px);}
+	30% {opacity: 1;transform: translateY(0);}
+	70% {opacity: 1;transform: translateY(0);}
+	85% {opacity: 0;transform: translateY(97px);}
+	100% {opacity: 0;transform: translateY(97px);}
+}
+
+@keyframes slidetop {
+	from {transform: translateY(0);opacity: 1;}
+	to {transform: translateY(-100%);opacity: 0;}
+}

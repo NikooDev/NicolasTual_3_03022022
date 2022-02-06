@@ -1,0 +1,30 @@
+.restaurants {
+	background-color: #e8e8e8;
+	&__list {
+		margin-top: 1.3rem;
+	}
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 2rem;
+		row-gap: 2rem;
+		&__link {
+			& img {
+				display: flex;
+				height: 15rem;
+				width: 100%;
+				object-fit: cover;
+				border-radius: 1rem 1rem 0 0;
+			}
+		}
+		&__content {
+			background-color: #fff;
+			border-radius: 0 0 1rem 1rem;
+			padding: 1rem;
+			line-height: 1.5;
+		}
+		&__badge {
+			position: absolute;
+		}
+	}
+}
