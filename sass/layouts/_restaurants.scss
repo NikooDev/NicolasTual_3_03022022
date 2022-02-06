@@ -9,6 +9,11 @@
 		column-gap: 2rem;
 		row-gap: 2rem;
 		&__link {
+			display: flex;
+			flex-direction: column;
+			box-shadow: var(--shadow);
+			border-radius: 1rem;
+			position: relative;
 			& img {
 				display: flex;
 				height: 15rem;
@@ -16,15 +21,31 @@
 				object-fit: cover;
 				border-radius: 1rem 1rem 0 0;
 			}
+			& figcaption {
+				display: flex;
+				align-items: center;
+				background-color: #fff;
+				border-radius: 0 0 1rem 1rem;
+				padding: 1rem;
+			}
 		}
 		&__content {
-			background-color: #fff;
-			border-radius: 0 0 1rem 1rem;
-			padding: 1rem;
 			line-height: 1.5;
+			flex: 1;
+		}
+		&__heart i {
+			font-size: 1.5rem;
 		}
 		&__badge {
 			position: absolute;
+			right: 0;
+			background-color: var(--tertiary);
+			border-radius: .2rem;
+			padding: .5rem .8rem;
+			margin: 1rem;
+			font-size: .9rem;
+			font-weight: 500;
+			color: #48967b;
 		}
 	}
 }
