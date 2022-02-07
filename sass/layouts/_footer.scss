@@ -1,0 +1,72 @@
+.footer {
+	background-color: #353535;
+	padding: 2rem 2rem 3rem;
+	.container {
+		flex-direction: column;
+		@include mobile {
+			align-items: initial;
+		}
+	}
+	& img {
+		width: 7rem;
+	}
+	&__nav {
+		display: flex;
+		margin-top: 1rem;
+		@include mobile {
+			flex-direction: column;
+			line-height: 1.7;
+		}
+		& li {
+			position: relative;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:first-child {
+				&::before {
+					content: none;
+				}
+			}
+			&::before {
+				content: "•";
+				color: #fff;
+				margin: 0 .6rem 0 .8rem;
+				@include mobile {
+					content: none;
+				}
+			}
+		}
+	}
+	& i {
+		color: #fff;
+		margin-right: .25rem;
+		@include mobile {
+			width: 1.5rem;
+		}
+	}
+	&__link {
+		position: relative;
+		color: #fff;
+		padding: .5rem 0;
+		&::after {
+			content: "";
+			background-color: #fff;
+			height: 2px;
+			width: 80%;
+			display: flex;
+			position: absolute;
+			bottom: .15rem;
+			left: 50%;
+			margin-left: -40%;
+			opacity: 0;
+			transition: opacity .2s ease-in-out;
+		}
+		&:hover::after {
+			content: "";
+			opacity: 1;
+			@include mobile {
+				content: none;
+			}
+		}
+	}
+}

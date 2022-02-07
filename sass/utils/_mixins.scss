@@ -12,3 +12,15 @@
 	align-items: center;
 	justify-content: center;
 }
+
+@mixin mobile {
+	@media screen and (max-width: 950px) {
+		@content;
+	}
+}
+
+@mixin medium {
+	@media screen and (max-width: 1023px) {
+		@content;
+	}
+}
