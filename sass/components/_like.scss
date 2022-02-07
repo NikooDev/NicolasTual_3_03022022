@@ -15,7 +15,7 @@
 	}
 	&:hover > i.fas {
 		opacity: 1;
-		background-image: linear-gradient(0, var(--primary), var(--secondary));
+		background-image: linear-gradient(0, var(--secondary), var(--primary));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
