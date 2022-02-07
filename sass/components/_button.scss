@@ -1,8 +1,15 @@
 .btn {
-	background-image: linear-gradient(0, var(--primary), var(--secondary));
+	background-image: linear-gradient(0, var(--primary), rgba(255,255,255,0));
+	background-color: var(--secondary);
 	border-radius: 3rem;
 	font-weight: 500;
 	color: #fff;
 	height: 3.15rem;
 	padding: 0 1.3rem;
+	box-shadow: var(--shadow-btn);
+	transition: box-shadow .2s ease-in-out, background-color .2s ease-in-out;
+	&:hover {
+		background-color: #ff5ace;
+		box-shadow: var(--shadow-btn-hover);
+	}
 }

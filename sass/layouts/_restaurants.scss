@@ -14,6 +14,10 @@
 			box-shadow: var(--shadow);
 			border-radius: 1rem;
 			position: relative;
+			transition: box-shadow .2s ease-in-out;
+			&:hover {
+				box-shadow: var(--shadow-hover);
+			}
 			& img {
 				display: flex;
 				height: 15rem;
@@ -32,9 +36,6 @@
 		&__content {
 			line-height: 1.5;
 			flex: 1;
-		}
-		&__heart i {
-			font-size: 1.5rem;
 		}
 		&__badge {
 			position: absolute;
