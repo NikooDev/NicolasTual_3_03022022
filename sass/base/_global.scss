@@ -2,6 +2,7 @@
 BASE.SCSS
  */
 
+// Global class
 html {
 	scroll-behavior: smooth;
 }
@@ -14,14 +15,18 @@ body {
 	overflow-x: hidden;
 }
 
+// Reusable class
 .container {
 	margin: 0 auto;
-	width: 70%;
+	width: 100%;
+	@include tablet {
+		width: 70%;
+	}
 }
 
-@media screen and (max-width: 1355px) {
+@media screen and (min-width: 950px) and (max-width: 1350px) {
 	.container {
-		width: 100%;
+		width: 90%;
 	}
 }
 

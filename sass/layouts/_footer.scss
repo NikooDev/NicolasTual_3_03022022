@@ -3,8 +3,9 @@
 	padding: 2rem 2rem 3rem;
 	.container {
 		flex-direction: column;
-		@include mobile {
-			align-items: initial;
+		align-items: initial;
+		@include desktop {
+			align-items: center;
 		}
 	}
 	& img {
@@ -13,9 +14,11 @@
 	&__nav {
 		display: flex;
 		margin-top: 1rem;
-		@include mobile {
-			flex-direction: column;
-			line-height: 1.7;
+		flex-direction: column;
+		line-height: 1.7;
+		@include desktop {
+			flex-direction: initial;
+			line-height: 1;
 		}
 		& li {
 			position: relative;
@@ -28,11 +31,11 @@
 				}
 			}
 			&::before {
-				content: "•";
-				color: #fff;
-				margin: 0 .6rem 0 .8rem;
-				@include mobile {
-					content: none;
+				content: none;
+				@include desktop {
+					content: "•";
+					color: #fff;
+					margin: 0 .6rem 0 .8rem;
 				}
 			}
 		}
@@ -40,8 +43,9 @@
 	& i {
 		color: #fff;
 		margin-right: .25rem;
-		@include mobile {
-			width: 1.5rem;
+		width: 1.5rem;
+		@include desktop {
+			width: auto;
 		}
 	}
 	&__link {
@@ -62,10 +66,10 @@
 			transition: opacity .2s ease-in-out;
 		}
 		&:hover::after {
-			content: "";
-			opacity: 1;
-			@include mobile {
-				content: none;
+			content: none;
+			@include desktop {
+				content: "";
+				opacity: 1;
 			}
 		}
 	}

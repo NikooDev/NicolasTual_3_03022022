@@ -3,11 +3,12 @@
 	flex-direction: column;
 	&__nav {
 		display: flex;
-		flex-wrap: wrap;
-		margin: 1.5rem 1rem;
-		@include mobile {
-			flex-direction: column;
-			margin: 1rem 0 0 0.5rem;
+		flex-direction: column;
+		margin: 1rem 0 0 0.5rem;
+		@include tablet {
+			flex-wrap: wrap;
+			flex-direction: row;
+			margin: 1.5rem 1rem;
 		}
 	}
 	&__item {
@@ -17,11 +18,11 @@
 		display: inherit;
 		flex: 1;
 		padding: 1.5rem;
-		margin-right: 1.7rem;
+		margin: .8rem 0;
 		position: relative;
 		transition: box-shadow .2s ease-in-out, background-color .2s ease-in-out;
-		@include mobile {
-			margin: .8rem 0;
+		@include tablet {
+			margin-right: 1.7rem;
 		}
 		&:last-child {
 			margin-right: 0;
@@ -49,10 +50,11 @@
 	& i {
 		font-size: 1.2rem;
 		color: #7e7e7e;
-		margin: 0 1.5rem 0 .5rem;
+		margin: 0 1rem 0 .5rem;
 		transition: color .2s ease-in-out;
 	}
 	&__text {
 		font-weight: 500;
+		white-space: nowrap;
 	}
 }
