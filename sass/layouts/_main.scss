@@ -56,11 +56,16 @@
 			padding: .7rem 1rem;
 			display: flex;
 			overflow: hidden;
+			opacity: 0;
+			animation: fadeIn .7s ease-in-out forwards;
 			&:hover {
 				cursor: pointer;
 			}
 			&:hover > .menu__check {
 				margin-right: -1rem;
+			}
+			&:hover .menu__icon {
+				animation: rotate .4s ease-in-out forwards;
 			}
 		}
 		&__text {
@@ -78,7 +83,7 @@
 		}
 		&__price {
 			display: flex;
-			align-items: end;
+			align-items: flex-end;
 			font-weight: 500;
 			margin: 0 1rem;
 		}
@@ -86,12 +91,18 @@
 			background-color: var(--tertiary);
 			width: 4rem;
 			margin: -0.7rem -5rem -0.7rem 0;
-			transition: margin-right .3s ease-in-out;
+			transition: margin-right .35s ease-in-out;
 			@include flex-center;
 		}
 		&__icon {
+			background-color: #fff;
+			border-radius: 50%;
+			height: 1.4rem;
+			width: 1.4rem;
+			@include flex-center;
 			& i {
-				color: #fff;
+				color: var(--tertiary);
+				font-size: .85rem;
 			}
 		}
 	}
@@ -102,5 +113,30 @@
 		& .btn {
 			padding: 0 3rem;
 		}
+	}
+	@for $i from 0 to 11 {
+		.menu-#{$i} {
+			animation-delay: #{$i / 10}s;
+		}
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(-360deg);
+	}
+	to {
+		transform: rotate(0);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(15%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
