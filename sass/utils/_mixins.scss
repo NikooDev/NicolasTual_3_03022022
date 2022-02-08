@@ -13,6 +13,12 @@
 	justify-content: center;
 }
 
+@mixin text-ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 @mixin tablet {
 	@media screen and (min-width: 950px) {
 		@content;
@@ -21,6 +27,12 @@
 
 @mixin desktop {
 	@media screen and (min-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin sizeMenu {
+	@media screen and (min-width: 1260px) {
 		@content;
 	}
 }

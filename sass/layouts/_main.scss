@@ -3,7 +3,10 @@
 	border-radius: 3rem 3rem 0 0;
 	min-height: 25rem;
 	position: relative;
-	max-width: 90%;
+	width: 100%;
+	@include sizeMenu {
+		width: 90%;
+	}
 	margin: -4rem auto 0;
 	&__header {
 		display: flex;
@@ -13,6 +16,91 @@
 		& h1 {
 			font-family: "Shrikhand", Arial, sans-serif;
 			font-size: 1.6rem;
+		}
+	}
+	&__content {
+		padding: 1rem 0;
+		@include sizeMenu {
+			padding: 1rem 2rem;
+		}
+	}
+	.menu {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		@include tablet {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		&__item {
+			overflow: hidden;
+			padding: 0 1rem;
+		}
+		&__title {
+			font-size: 1.1rem;
+			font-weight: 400;
+			position: relative;
+			&:after {
+				content: "";
+				background-color: var(--tertiary);
+				height: 0.2rem;
+				width: 2.8rem;
+				position: absolute;
+				left: 0;
+				bottom: -0.4rem;
+			}
+		}
+		&__content {
+			background-color: #fff;
+			border-radius: 1rem;
+			box-shadow: var(--shadow);
+			margin: 1.5rem 0;
+			padding: .7rem 1rem;
+			display: flex;
+			overflow: hidden;
+			&:hover {
+				cursor: pointer;
+			}
+			&:hover > .menu__check {
+				margin-right: -1rem;
+			}
+		}
+		&__text {
+			flex: 1;
+			line-height: 1.4;
+			&, & h3, & p {
+				@include text-ellipsis;
+			}
+			& h3 {
+				font-size: 1.15rem;
+			}
+			& p {
+				font-size: .9rem;
+			}
+		}
+		&__price {
+			display: flex;
+			align-items: end;
+			font-weight: 500;
+			margin: 0 1rem;
+		}
+		&__check {
+			background-color: var(--tertiary);
+			width: 4rem;
+			margin: -0.7rem -5rem -0.7rem 0;
+			transition: margin-right .3s ease-in-out;
+			@include flex-center;
+		}
+		&__icon {
+			& i {
+				color: #fff;
+			}
+		}
+	}
+	&__footer {
+		display: flex;
+		justify-content: center;
+		padding: 1rem 0 5rem;
+		& .btn {
+			padding: 0 3rem;
 		}
 	}
 }
