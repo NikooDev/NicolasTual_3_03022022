@@ -116,7 +116,7 @@
 	}
 	@for $i from 0 to 11 {
 		.menu-#{$i} {
-			animation-delay: #{$i / 10}s;
+			animation-delay: #{$i / 5}s;
 		}
 	}
 }

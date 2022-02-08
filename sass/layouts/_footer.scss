@@ -72,5 +72,11 @@
 				opacity: 1;
 			}
 		}
+		&:hover {
+			text-decoration: underline;
+			@include tablet {
+				text-decoration: none;
+			}
+		}
 	}
 }
