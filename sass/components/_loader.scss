@@ -6,7 +6,7 @@ LOADER.SCSS
 	background: linear-gradient(to right, var(--primary) 2%,#7202bb 82%);
 	position: fixed;
 	z-index: 1000;
-	animation: slidetop .8s cubic-bezier(0.32, 0, 0.67, 0) forwards 5s;
+	animation: slidetop .8s cubic-bezier(0.32, 0, 0.67, 0) forwards 3.5s;
 	@include fixed-fullscreen;
 	&__inner {
 		height: 100%;
@@ -23,7 +23,7 @@ LOADER.SCSS
 			height: .75rem;
 			width: .75rem;
 			opacity: 0;
-			animation: load 4.6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+			animation: load 3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 		}
 	}
 	& &__1 {top: 0;left: 0;animation-delay: 1.06s;} & &__2 {top: 0;left: 16px;animation-delay: .97s;}

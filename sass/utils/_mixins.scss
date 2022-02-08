@@ -13,13 +13,13 @@
 	justify-content: center;
 }
 
-@mixin desktop {
+@mixin tablet {
 	@media screen and (min-width: 950px) {
 		@content;
 	}
 }
 
-@mixin tablet {
+@mixin desktop {
 	@media screen and (min-width: 1023px) {
 		@content;
 	}

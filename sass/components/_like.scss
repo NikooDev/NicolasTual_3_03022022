@@ -11,6 +11,9 @@
 	& i.fas {
 		opacity: 0;
 	}
+	&:hover {
+		cursor: pointer;
+	}
 	&:hover > i.far {
 		opacity: 0;
 	}

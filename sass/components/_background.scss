@@ -1,0 +1,9 @@
+.background {
+	height: 30rem;
+	width: 100%;
+	& img {
+		height: inherit;
+		width: inherit;
+		object-fit: cover;
+	}
+}

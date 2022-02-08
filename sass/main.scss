@@ -13,6 +13,7 @@ MAIN.SCSS
 
 // Layouts
 @import "layouts/header";
+@import "layouts/main";
 @import "layouts/maps";
 @import "layouts/intro";
 @import "layouts/steps";
@@ -23,3 +24,5 @@ MAIN.SCSS
 @import "components/loader";
 @import "components/button";
 @import "components/like";
+@import "components/back";
+@import "components/background";

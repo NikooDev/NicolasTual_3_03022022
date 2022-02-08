@@ -8,7 +8,7 @@
 		grid-template-columns: repeat(1,1fr);
 		column-gap: 2rem;
 		row-gap: 1rem;
-		@include tablet {
+		@include desktop {
 			grid-template-columns: repeat(2, 1fr);
 			row-gap: 2rem;
 		}
@@ -28,7 +28,7 @@
 				width: 100%;
 				object-fit: cover;
 				border-radius: 1rem 1rem 0 0;
-				@include tablet {
+				@include desktop {
 					height: 15rem;
 				}
 			}
