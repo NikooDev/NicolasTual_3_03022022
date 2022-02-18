@@ -2,6 +2,8 @@
 
 Intégration d'une maquette d'un site de commande en restauration.
 
+https://nikoodev.github.io/NicolasTual_3_03022022/
+
 ## Choix techniques
 
 - Full CSS
@@ -30,5 +32,3 @@ Intégration d'une maquette d'un site de commande en restauration.
 
 - Affichage progressif du menu
 - Effet aux survols des liens, du bouton like, et des étapes
-
-[https://nikoodev.github.io/NicolasTual_3_03022022/]
